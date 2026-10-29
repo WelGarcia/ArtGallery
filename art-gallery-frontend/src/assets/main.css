@@ -1,0 +1,102 @@
+:root { --brand-color: #6f42c1; }
+
+.app-layout { min-height: 100vh; }
+.login-page { min-height: calc(100vh - 145px); background: linear-gradient(135deg, #f7f3ff 0%, #ffffff 100%); }
+.auth-card { max-width: 480px; width: 100%; border-top: 5px solid var(--brand-color) !important; }
+.auth-card-wide { max-width: 760px; }
+.brand-mark { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 14px; background: var(--brand-color); color: white; font-weight: 800; }
+
+.btn-brand { background: var(--brand-color); color: white; }
+.btn-brand:hover, .btn-brand:focus { background: #5d35a8; color: white; }
+.btn-outline-brand { color: var(--brand-color); border: 1px solid var(--brand-color); }
+.btn-outline-brand:hover, .btn-outline-brand:focus { background: var(--brand-color); color: white; }
+.auth-card a { color: var(--brand-color); }
+
+.navbar-brand { color: var(--brand-color); }
+.navbar-avatar { object-fit: cover; }
+.navbar .nav-link { color: #333; }
+.navbar .nav-link:hover { color: var(--brand-color); }
+
+.avatar-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+  background-color: #eee;
+}
+
+.sidebar {
+  background: white;
+  border-right: 1px solid #eee;
+  min-height: calc(100vh - 56px);
+  position: sticky;
+  top: 56px;
+  align-self: flex-start;
+}
+.sidebar .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.router-link-active {
+  background-color: rgba(111, 66, 193, .07);
+  color: var(--brand-color);
+}
+
+/* Aula 07: progresso e prévia da obra */
+.progress-bar { background-color: var(--brand-color); }
+.artwork-preview { width: 100%; max-width: 320px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; border: 1px solid #eee; background: #eee; }
+
+/* Aula 08 - cards e detalhe para obras em imagem (Grupo B) */
+.artwork-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+  height: 100%;
+}
+.artwork-card:hover { transform: translateY(-5px); }
+.artwork-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background-color: #f0f0f0;
+}
+.artwork-card-media { position: relative; }
+.artwork-badge-views {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+.artwork-detail-image {
+  display: block;
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+
+
+/* Aula 09: cartão de perfil público; reaproveita a cor do projeto. */
+.profile-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+/* Aula 10: comentários como texto seguro, mantendo parágrafos/quebras. */
+.comment-content { white-space: pre-wrap; word-break: break-word; }
